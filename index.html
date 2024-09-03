@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body class="h-screen ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    class="h-screen bg-[url('./assets/images/bg_mor.jpg')] bg-center bg-no-repeat"
+  >
+    <section class="py-8">
+      <!-- Top Section Start  -->
+      <div class="px-4 w-full flex flex-col md:flex-row md:justify-between md:items-center gap:2 md:gap-4 mx-auto">
+        <!-- Logo start  -->
+        <div class="flex items-center gap-4">
+          <div class="size-14">
+            <img
+              src="./assets/logo/logo.avif"
+              alt="logo"
+              class="rounded-md"
+            />
+          </div>
 
-</body>
+          <div class="max-w-5">
+            <h2 class="text-2xl text-white font-bold capitalize">
+              <span class="text-[#31c2e4]">W</span>eather dashboar<span
+                class="text-[#31c2e4]"
+                >d</span
+              >
+            </h2>
+          </div>
+        </div>
+        <!-- Logo end -->
+
+        <!-- search start  -->
+          <div class="relative">
+            <div class=" ">
+            <input
+              type="text"
+              placeholder="Search Location"
+              class="w-full flex-1 px-4 py-4 border-none rounded-md bg-white/30 backdrop-blur-sm placeholder-white text-xl font-semibold"
+            />
+          </div>
+          <div class="absolute top-2 right-4">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="40px" height="40px"><circle fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" cx="21" cy="20" r="16"/><line fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="32.229" y1="32.229" x2="45.5" y2="45.5"/></svg>
+          </div>
+        </div>
+        <!-- search end  -->
+      </div>
+      <!-- Top Section end  -->
+    </section>
+  </body>
 </html>
